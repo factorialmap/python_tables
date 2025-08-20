@@ -33,4 +33,4 @@ This project demonstrates how to create a useful, customizable tables in Python 
 pip install great-tables
 ```
 
-[More about GT Great table package](https://pypi.org/project/great-tables/)(target="_blank")
+[More about GT Great table package](https://pypi.org/project/great-tables/ target="_blank")
