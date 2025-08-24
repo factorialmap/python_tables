@@ -14,13 +14,11 @@ gtcars_mini["efficiency"] = gtcars_mini["mpg_c"] / gtcars_mini["hp"] * 100
     .tab_header(title = "Car Performance Review", subtitle="Using gt-extras funct")
 
     # add gt-extras features using gt.pipe()
-
-.pipe(gte.gt_color_box, columns = ["hp","trq"], palette =["red", "green"])
-.pipe(gte.gt_plt_dot, category_col = "mfr", data_col = "efficiency", domain =[0,0])
-.pipe(gte.gt_plt_bar, columns = ["mpg_c", "mpg_h"])
-.pipe(gte.gt_fa_rating, columns = "efficiency")
-.pipe(gte.gt_hulk_col_numeric, columns = "year", palette = "viridis")
-.pipe(gte.gt_theme_538)
-
+    .pipe(gte.gt_color_box, columns = ["hp","trq"], palette =["red", "green"])
+    .pipe(gte.gt_plt_dot, category_col = "mfr", data_col = "efficiency", domain =[0,0])
+    .pipe(gte.gt_plt_bar, columns = ["mpg_c", "mpg_h"])
+    .pipe(gte.gt_fa_rating, columns = "efficiency")
+    .pipe(gte.gt_hulk_col_numeric, columns = "year", palette = "viridis")
+    .pipe(gte.gt_theme_538)
 )
 
